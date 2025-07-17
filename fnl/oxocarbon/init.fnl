@@ -277,8 +277,8 @@
 
 ;; search
 
-(custom-set-face! :Search [] {:fg oxocarbon.base00 :bg oxocarbon.base07 :blend 0.3})
-(custom-set-face! :IncSearch [] {:fg oxocarbon.base00 :bg oxocarbon.base08 :blend 0.3})
+(custom-set-face! :Search [] {:fg oxocarbon.base00 :bg oxocarbon.base07 :blend 30})
+(custom-set-face! :IncSearch [] {:fg oxocarbon.base00 :bg oxocarbon.base08 :blend 30})
 (custom-set-face! :CurSearch [:underline]
                   {:fg oxocarbon.base06 :bg oxocarbon.base03})
 
