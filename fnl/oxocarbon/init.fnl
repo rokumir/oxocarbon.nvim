@@ -279,7 +279,7 @@
 
 (custom-set-face! :Search [] {:fg oxocarbon.base00 :bg (blend-hex oxocarbon.base00 oxocarbon.base10 0.3)})
 (custom-set-face! :IncSearch [] {:fg oxocarbon.base00 :bg (blend-hex oxocarbon.base00 oxocarbon.base11 0.3)})
-(custom-set-face! :CurSearch [] [:underline]
+(custom-set-face! :CurSearch [:underline]
                   {:fg oxocarbon.base06 :bg oxocarbon.base03})
 
 ;; tabs
