@@ -59,19 +59,19 @@
                           {: base00
                            :base01 (blend-hex base00 base06 0.085)
                            :base02 (blend-hex base00 base06 0.18)
-                           :base03 (blend-hex base00 base06 0.3)
-                           :base04 (blend-hex base00 base06 0.82)
-                           :base05 (blend-hex base00 base06 0.95)
+                           :base03 (blend-hex base00 base06 0.32)   ;; blend-hex base00 base06 0.3
+                           :base04 (blend-hex base00 base06 0.8)    ;; blend-hex base00 base06 0.82
+                           :base05 (blend-hex base00 base06 0.95)   ;; blend-hex base00 base06 0.95
                            : base06
-                           :base07 "#08bdba"
-                           :base08 "#3ddbd9"
+                           :base07 "#4db9a7"                     ;; #08bdba
+                           :base08 "#83f6d6"                     ;; #3ddbd9
                            : base09
-                           :base10 "#ee5396"
-                           :base11 "#33b1ff"
-                           :base12 "#ff7eb6"
-                           :base13 "#42be65"
-                           :base14 "#be95ff"
-                           :base15 "#82cfff"
+                           :base10 "#f9608f"                     ;; #ee5396
+                           :base11 "#7bc6d3"                     ;; #33b1ff
+                           :base12 "#f6c177"                     ;; #ff7eb6
+                           :base13 "#6cd0a2"                     ;; #42be65
+                           :base14 "#c4a7e7"                     ;; #be95ff
+                           :base15 "#79d6e6"                     ;; #82cfff
                            :blend "#0f0f0f"
                            :none :NONE})
                      {:base00 base06
@@ -389,7 +389,7 @@
 ;;; literals
 
 (custom-set-face! "@string" [] {:link "String"})
-(custom-set-face! "@string.regex" [] {:fg oxocarbon.base07 :bg oxocarbon.none})
+(custom-set-face! "@string.regex" [] {:fg oxocarbon.base12 :bg oxocarbon.none})
 (custom-set-face! "@string.escape" [] {:fg oxocarbon.base15 :bg oxocarbon.none})
 
 ;; @string.special
