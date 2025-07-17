@@ -63,11 +63,11 @@
                            :base04 (blend-hex base00 base06 0.8)    ;; blend-hex base00 base06 0.82
                            :base05 (blend-hex base00 base06 0.95)   ;; blend-hex base00 base06 0.95
                            : base06
-                           :base07 "#4db9a7"                     ;; #08bdba
-                           :base08 "#83f6d6"                     ;; #3ddbd9
+                           :base07 "#4fb09f"                     ;; #08bdba
+                           :base08 "#74dfc2"                     ;; #3ddbd9
                            : base09
                            :base10 "#f9608f"                     ;; #ee5396
-                           :base11 "#7bc6d3"                     ;; #33b1ff
+                           :base11 "#72bcc9"                     ;; #33b1ff
                            :base12 "#ff7eb6"                     ;; #ff7eb6
                            :base13 "#6cd0a2"                     ;; #42be65
                            :base14 "#be95ff"                     ;; #be95ff
@@ -312,11 +312,11 @@
 (custom-set-face! :Function [] {:fg oxocarbon.base08 :bg oxocarbon.none})
 (custom-set-face! :Identifier [] {:fg oxocarbon.base04 :bg oxocarbon.none})
 (custom-set-face! :Include [] {:fg oxocarbon.base09 :bg oxocarbon.none})
-(custom-set-face! :Keyword [] {:fg oxocarbon.base09 :bg oxocarbon.none})
+(custom-set-face! :Keyword [] {:fg oxocarbon.base04 :bg oxocarbon.none})
 (custom-set-face! :Label [] {:fg oxocarbon.base09 :bg oxocarbon.none})
-(custom-set-face! :Number [] {:fg oxocarbon.base15 :bg oxocarbon.none})
-(custom-set-face! :Operator [] {:fg oxocarbon.base09 :bg oxocarbon.none})
-(custom-set-face! :PreProc [] {:fg oxocarbon.base09 :bg oxocarbon.none})
+(custom-set-face! :Number [] {:fg oxocarbon.base09 :bg oxocarbon.none})
+(custom-set-face! :Operator [] {:fg oxocarbon.base04 :bg oxocarbon.none})
+(custom-set-face! :PreProc [] {:fg oxocarbon.base04 :bg oxocarbon.none})
 (custom-set-face! :Repeat [] {:fg oxocarbon.base09 :bg oxocarbon.none})
 (custom-set-face! :Special [] {:fg oxocarbon.base04 :bg oxocarbon.none})
 (custom-set-face! :SpecialChar [] {:fg oxocarbon.base04 :bg oxocarbon.none})
