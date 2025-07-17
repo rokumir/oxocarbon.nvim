@@ -68,9 +68,9 @@
                            : base09
                            :base10 "#f9608f"                     ;; #ee5396
                            :base11 "#7bc6d3"                     ;; #33b1ff
-                           :base12 "#f6c177"                     ;; #ff7eb6
+                           :base12 "#ff7eb6"                     ;; #ff7eb6
                            :base13 "#6cd0a2"                     ;; #42be65
-                           :base14 "#c4a7e7"                     ;; #be95ff
+                           :base14 "#f6c177"                     ;; #be95ff
                            :base15 "#79d6e6"                     ;; #82cfff
                            :blend "#0f0f0f"
                            :none :NONE})
