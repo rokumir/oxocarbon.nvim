@@ -415,7 +415,7 @@
 
 ;; @method.call
 
-(custom-set-face! "@constructor" [] {:fg oxocarbon.base09 :bg oxocarbon.none})
+(custom-set-face! "@constructor" [] {:fg oxocarbon.base14 :bg oxocarbon.none})
 (custom-set-face! "@parameter" [] {:fg oxocarbon.base04 :bg oxocarbon.none})
 
 ;;; keywords
