@@ -53,7 +53,7 @@
 
 (local base00 "#111111")
 (local base06 "#ffffff")
-(local base09 "#78a9ff")
+(local base09 "#ea9a97")
 
 (local oxocarbon (or (and (= vim.o.background :dark)
                           {: base00
@@ -70,7 +70,7 @@
                            :base11 "#7bc6d3"                     ;; #33b1ff
                            :base12 "#ff7eb6"                     ;; #ff7eb6
                            :base13 "#6cd0a2"                     ;; #42be65
-                           :base14 "#f6c177"                     ;; #be95ff
+                           :base14 "#be95ff"                     ;; #be95ff
                            :base15 "#79d6e6"                     ;; #82cfff
                            :blend "#0f0f0f"
                            :none :NONE})
@@ -277,8 +277,8 @@
 
 ;; search
 
-(custom-set-face! :Search [] {:fg oxocarbon.base00 :bg (blend-hex oxocarbon.base00 oxocarbon.base10 0.3)})
-(custom-set-face! :IncSearch [] {:fg oxocarbon.base00 :bg (blend-hex oxocarbon.base00 oxocarbon.base11 0.3)})
+(custom-set-face! :Search [] {:fg oxocarbon.base00 :bg oxocarbon.base07 :blend 0.3})
+(custom-set-face! :IncSearch [] {:fg oxocarbon.base00 :bg oxocarbon.base08 :blend 0.3})
 (custom-set-face! :CurSearch [:underline]
                   {:fg oxocarbon.base06 :bg oxocarbon.base03})
 
