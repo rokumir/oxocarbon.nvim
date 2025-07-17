@@ -53,7 +53,7 @@
 
 (local base00 "#111111") ;; #161616
 (local base06 "#ffffff")
-(local base09 "#efb768")
+(local base09 "#3a91b4")
 
 (local oxocarbon (or (and (= vim.o.background :dark)
                           {: base00
