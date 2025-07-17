@@ -51,7 +51,7 @@
 
 ;; oxocarbon palette
 
-(local base00 "#161616")
+(local base00 "#111111")
 (local base06 "#ffffff")
 (local base09 "#78a9ff")
 
@@ -72,7 +72,7 @@
                            :base13 "#42be65"
                            :base14 "#be95ff"
                            :base15 "#82cfff"
-                           :blend "#131313"
+                           :blend "#0f0f0f"
                            :none :NONE})
                      {:base00 base06
                       :base01 (blend-hex base00 base06 0.95)
@@ -277,8 +277,10 @@
 
 ;; search
 
-(custom-set-face! :IncSearch [] {:fg oxocarbon.base06 :bg oxocarbon.base10})
-(custom-set-face! :Search [] {:fg oxocarbon.base01 :bg oxocarbon.base08})
+(custom-set-face! :Search [] {:fg oxocarbon.base00 :bg (blend-hex oxocarbon.base00 oxocarbon.base10 0.3)})
+(custom-set-face! :IncSearch [] {:fg oxocarbon.base00 :bg (blend-hex oxocarbon.base00 oxocarbon.base11 0.3)})
+(custom-set-face! :CurSearch [] [:underline]
+                  {:fg oxocarbon.base06 :bg oxocarbon.base03})
 
 ;; tabs
 
@@ -296,7 +298,7 @@
 ;; regular syntax
 
 (custom-set-face! :Boolean [] {:fg oxocarbon.base09 :bg oxocarbon.none})
-(custom-set-face! :Character [] {:fg oxocarbon.base14 :bg oxocarbon.none})
+(custom-set-face! :Character [] {:fg oxocarbon.base07 :bg oxocarbon.none})
 (custom-set-face! :Comment [:italic]
                   {:fg oxocarbon.base03 :bg oxocarbon.none})
 (custom-set-face! :Conceal [] {:fg oxocarbon.none :bg oxocarbon.none})
@@ -321,7 +323,7 @@
 (custom-set-face! :SpecialComment [] {:fg oxocarbon.base08 :bg oxocarbon.none})
 (custom-set-face! :Statement [] {:fg oxocarbon.base09 :bg oxocarbon.none})
 (custom-set-face! :StorageClass [] {:fg oxocarbon.base09 :bg oxocarbon.none})
-(custom-set-face! :String [] {:fg oxocarbon.base14 :bg oxocarbon.none})
+(custom-set-face! :String [] {:fg oxocarbon.base07 :bg oxocarbon.none})
 (custom-set-face! :Structure [] {:fg oxocarbon.base09 :bg oxocarbon.none})
 (custom-set-face! :Tag [] {:fg oxocarbon.base04 :bg oxocarbon.none})
 (custom-set-face! :Todo [] {:fg oxocarbon.base13 :bg oxocarbon.none})
@@ -444,8 +446,8 @@
 ;; @storageclass.lifetime
 
 (custom-set-face! "@attribute" [] {:fg oxocarbon.base15 :bg oxocarbon.none})
-(custom-set-face! "@field" [] {:fg oxocarbon.base04 :bg oxocarbon.none})
-(custom-set-face! "@property" [] {:fg oxocarbon.base10 :bg oxocarbon.none})
+(custom-set-face! "@field" [] {:fg oxocarbon.base13 :bg oxocarbon.none})
+(custom-set-face! "@property" [] {:fg oxocarbon.base04 :bg oxocarbon.none})
 
 ;;; identifiers
 
@@ -672,5 +674,12 @@
 (custom-set-face! :VimwikiList [] {:link "markdownListMarker"})
 (custom-set-face! :VimwikiLink [] {:link "markdownUrl"})
 (custom-set-face! :VimwikiCode [] {:link "markdownCode"})
+
+;; Snacks.nvim
+
+; (custom-set-face! :SnacksIndent [] {:link "NonText"})
+; (custom-set-face! :SnacksIndentScope [] {:link "Special"})
+; (custom-set-face! :SnacksIndentChunk [] {:link "SnacksIndentScope"})
+
 
 { : oxocarbon }

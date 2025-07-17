@@ -6,10 +6,10 @@ else
 end
 vim.g["colors_name"] = "oxocarbon"
 vim.o["termguicolors"] = true
-local base00 = "#161616"
+local base00 = "#111111"
 local base06 = "#ffffff"
 local base09 = "#78a9ff"
-local oxocarbon = (((vim.o.background == "dark") and {base00 = base00, base01 = blend_hex(base00, base06, 0.085), base02 = blend_hex(base00, base06, 0.18), base03 = blend_hex(base00, base06, 0.3), base04 = blend_hex(base00, base06, 0.82), base05 = blend_hex(base00, base06, 0.95), base06 = base06, base07 = "#08bdba", base08 = "#3ddbd9", base09 = base09, base10 = "#ee5396", base11 = "#33b1ff", base12 = "#ff7eb6", base13 = "#42be65", base14 = "#be95ff", base15 = "#82cfff", blend = "#131313", none = "NONE"}) or {base00 = base06, base01 = blend_hex(base00, base06, 0.95), base02 = blend_hex(base00, base06, 0.82), base03 = base00, base04 = "#37474F", base05 = "#90A4AE", base06 = "#525252", base07 = "#08bdba", base08 = "#ff7eb6", base09 = "#ee5396", base10 = "#FF6F00", base11 = "#0f62fe", base12 = "#673AB7", base13 = "#42be65", base14 = "#be95ff", base15 = "#FFAB91", blend = "#FAFAFA", none = "NONE"})
+local oxocarbon = (((vim.o.background == "dark") and {base00 = base00, base01 = blend_hex(base00, base06, 0.085), base02 = blend_hex(base00, base06, 0.18), base03 = blend_hex(base00, base06, 0.3), base04 = blend_hex(base00, base06, 0.82), base05 = blend_hex(base00, base06, 0.95), base06 = base06, base07 = "#08bdba", base08 = "#3ddbd9", base09 = base09, base10 = "#ee5396", base11 = "#33b1ff", base12 = "#ff7eb6", base13 = "#42be65", base14 = "#be95ff", base15 = "#82cfff", blend = "#0f0f0f", none = "NONE"}) or {base00 = base06, base01 = blend_hex(base00, base06, 0.95), base02 = blend_hex(base00, base06, 0.82), base03 = base00, base04 = "#37474F", base05 = "#90A4AE", base06 = "#525252", base07 = "#08bdba", base08 = "#ff7eb6", base09 = "#ee5396", base10 = "#FF6F00", base11 = "#0f62fe", base12 = "#673AB7", base13 = "#42be65", base14 = "#be95ff", base15 = "#FFAB91", blend = "#FAFAFA", none = "NONE"})
 vim.g["terminal_color_0"] = oxocarbon.base01
 vim.g["terminal_color_1"] = oxocarbon.base11
 vim.g["terminal_color_2"] = oxocarbon.base14
@@ -148,8 +148,9 @@ vim.api.nvim_set_hl(0, "DiffAdd", {bg = "#122f2f", fg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "DiffChange", {bg = "#222a39", fg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "DiffText", {bg = "#2f3f5c", fg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "DiffDelete", {bg = "#361c28", fg = oxocarbon.none})
-vim.api.nvim_set_hl(0, "IncSearch", {fg = oxocarbon.base06, bg = oxocarbon.base10})
-vim.api.nvim_set_hl(0, "Search", {fg = oxocarbon.base01, bg = oxocarbon.base08})
+vim.api.nvim_set_hl(0, "Search", {fg = oxocarbon.base00, bg = blend_hex(oxocarbon.base00, oxocarbon.base10, 0.3)})
+vim.api.nvim_set_hl(0, "IncSearch", {fg = oxocarbon.base00, bg = blend_hex(oxocarbon.base00, oxocarbon.base11, 0.3)})
+vim.api.nvim_set_hl(0, "CurSearch", {"underline"})
 vim.api.nvim_set_hl(0, "TabLine", {link = "StatusLineNC"})
 vim.api.nvim_set_hl(0, "TabLineFill", {link = "TabLine"})
 vim.api.nvim_set_hl(0, "TabLineSel", {link = "StatusLine"})
@@ -157,7 +158,7 @@ vim.api.nvim_set_hl(0, "Title", {fg = oxocarbon.base04, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "VertSplit", {fg = oxocarbon.base01, bg = oxocarbon.base00})
 vim.api.nvim_set_hl(0, "WinSeparator", {fg = oxocarbon.base01, bg = oxocarbon.base00})
 vim.api.nvim_set_hl(0, "Boolean", {fg = oxocarbon.base09, bg = oxocarbon.none})
-vim.api.nvim_set_hl(0, "Character", {fg = oxocarbon.base14, bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "Character", {fg = oxocarbon.base07, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "Comment", {fg = oxocarbon.base03, bg = oxocarbon.none, italic = true})
 vim.api.nvim_set_hl(0, "Conceal", {fg = oxocarbon.none, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "Conditional", {fg = oxocarbon.base09, bg = oxocarbon.none})
@@ -181,7 +182,7 @@ vim.api.nvim_set_hl(0, "SpecialChar", {fg = oxocarbon.base04, bg = oxocarbon.non
 vim.api.nvim_set_hl(0, "SpecialComment", {fg = oxocarbon.base08, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "Statement", {fg = oxocarbon.base09, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "StorageClass", {fg = oxocarbon.base09, bg = oxocarbon.none})
-vim.api.nvim_set_hl(0, "String", {fg = oxocarbon.base14, bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "String", {fg = oxocarbon.base07, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "Structure", {fg = oxocarbon.base09, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "Tag", {fg = oxocarbon.base04, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "Todo", {fg = oxocarbon.base13, bg = oxocarbon.none})
@@ -244,8 +245,8 @@ vim.api.nvim_set_hl(0, "@exception", {fg = oxocarbon.base15, bg = oxocarbon.none
 vim.api.nvim_set_hl(0, "@type", {link = "Type"})
 vim.api.nvim_set_hl(0, "@type.builtin", {link = "Type"})
 vim.api.nvim_set_hl(0, "@attribute", {fg = oxocarbon.base15, bg = oxocarbon.none})
-vim.api.nvim_set_hl(0, "@field", {fg = oxocarbon.base04, bg = oxocarbon.none})
-vim.api.nvim_set_hl(0, "@property", {fg = oxocarbon.base10, bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "@field", {fg = oxocarbon.base13, bg = oxocarbon.none})
+vim.api.nvim_set_hl(0, "@property", {fg = oxocarbon.base04, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "@variable", {fg = oxocarbon.base04, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "@variable.builtin", {fg = oxocarbon.base04, bg = oxocarbon.none})
 vim.api.nvim_set_hl(0, "@constant", {fg = oxocarbon.base14, bg = oxocarbon.none})
