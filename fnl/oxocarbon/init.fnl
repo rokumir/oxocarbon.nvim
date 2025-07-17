@@ -277,8 +277,8 @@
 
 ;; search
 
-(custom-set-face! :Search [] {:fg oxocarbon.base00 :bg oxocarbon.base07 :blend 30})
-(custom-set-face! :IncSearch [] {:fg oxocarbon.base00 :bg oxocarbon.base08 :blend 30})
+(custom-set-face! :Search [] {:fg oxocarbon.base06 :bg (blend-hex oxocarbon.base00 oxocarbon.base07 0.3)})
+(custom-set-face! :IncSearch [] {:fg oxocarbon.base06 :bg (blend-hex oxocarbon.base00 oxocarbon.base08 0.3)})
 (custom-set-face! :CurSearch [:underline]
                   {:fg oxocarbon.base06 :bg oxocarbon.base03})
 
@@ -420,14 +420,14 @@
 
 ;;; keywords
 
-(custom-set-face! "@keyword" [] {:fg oxocarbon.base09 :bg oxocarbon.none})
+(custom-set-face! "@keyword" [] {:fg oxocarbon.base14 :bg oxocarbon.none})
 (custom-set-face! "@keyword.function" [] {:fg oxocarbon.base08 :bg oxocarbon.none})
 (custom-set-face! "@keyword.operator" [] {:fg oxocarbon.base08 :bg oxocarbon.none})
 
 ;; @keyword.return
 
-(custom-set-face! "@conditional" [] {:fg oxocarbon.base09 :bg oxocarbon.none})
-(custom-set-face! "@repeat" [] {:fg oxocarbon.base09 :bg oxocarbon.none})
+(custom-set-face! "@conditional" [] {:fg oxocarbon.base15 :bg oxocarbon.none})
+(custom-set-face! "@repeat" [] {:fg oxocarbon.base15 :bg oxocarbon.none})
 
 ;; @debug
 
