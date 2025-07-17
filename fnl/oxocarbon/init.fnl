@@ -53,7 +53,7 @@
 
 (local base00 "#111111") ;; #161616
 (local base06 "#ffffff")
-(local base09 "#78a9ff")
+(local base09 "#efb768")
 
 (local oxocarbon (or (and (= vim.o.background :dark)
                           {: base00
@@ -72,6 +72,7 @@
                            :base13 "#6cd0a2"                     ;; #42be65
                            :base14 "#be95ff"                     ;; #be95ff
                            :base15 "#79d6e6"                     ;; #82cfff
+                           :base16 "#ea9a97"
                            :blend "#0f0f0f"                      ;; #131313
                            :none :NONE})
                      {:base00 base06
@@ -89,7 +90,8 @@
                       :base12 "#673AB7"
                       :base13 "#42be65"
                       :base14 "#be95ff"
-                      :base15 "#FFAB91"
+                      :base15 "#286983"
+                      :base16 "#d7827e"
                       :blend "#FAFAFA"
                       :none :NONE}))
 
@@ -297,7 +299,7 @@
 
 ;; regular syntax
 
-(custom-set-face! :Boolean [] {:fg oxocarbon.base09 :bg oxocarbon.none})
+(custom-set-face! :Boolean [] {:fg oxocarbon.base16 :bg oxocarbon.none})
 (custom-set-face! :Character [] {:fg oxocarbon.base14 :bg oxocarbon.none})
 (custom-set-face! :Comment [:italic]
                   {:fg oxocarbon.base03 :bg oxocarbon.none})
@@ -314,7 +316,7 @@
 (custom-set-face! :Include [] {:fg oxocarbon.base09 :bg oxocarbon.none})
 (custom-set-face! :Keyword [] {:fg oxocarbon.base09 :bg oxocarbon.none})
 (custom-set-face! :Label [] {:fg oxocarbon.base09 :bg oxocarbon.none})
-(custom-set-face! :Number [] {:fg oxocarbon.base15 :bg oxocarbon.none})
+(custom-set-face! :Number [] {:fg oxocarbon.base16 :bg oxocarbon.none})
 (custom-set-face! :Operator [] {:fg oxocarbon.base09 :bg oxocarbon.none})
 (custom-set-face! :PreProc [] {:fg oxocarbon.base09 :bg oxocarbon.none})
 (custom-set-face! :Repeat [] {:fg oxocarbon.base09 :bg oxocarbon.none})
@@ -323,7 +325,7 @@
 (custom-set-face! :SpecialComment [] {:fg oxocarbon.base08 :bg oxocarbon.none})
 (custom-set-face! :Statement [] {:fg oxocarbon.base09 :bg oxocarbon.none})
 (custom-set-face! :StorageClass [] {:fg oxocarbon.base09 :bg oxocarbon.none})
-(custom-set-face! :String [] {:fg oxocarbon.base14 :bg oxocarbon.none})
+(custom-set-face! :String [] {:fg oxocarbon.base07 :bg oxocarbon.none})
 (custom-set-face! :Structure [] {:fg oxocarbon.base09 :bg oxocarbon.none})
 (custom-set-face! :Tag [] {:fg oxocarbon.base04 :bg oxocarbon.none})
 (custom-set-face! :Todo [] {:fg oxocarbon.base13 :bg oxocarbon.none})
