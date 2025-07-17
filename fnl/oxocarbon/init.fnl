@@ -51,7 +51,7 @@
 
 ;; oxocarbon palette
 
-(local base00 "#111111") ;; #161616
+(local base00 "#131313") ;; #161616
 (local base06 "#ffffff")
 (local base09 "#3a91b4")
 
